@@ -1,0 +1,10 @@
+extends layouts/default
+
+block content
+  h2 List of categories
+
+  each category in categories
+    a.ui.card.fluid.link(href="/categories/#{category._id}")
+      .content
+        h3.header category: #{category._id}
+        pre #{category}

@@ -1,0 +1,10 @@
+extends layouts/default
+
+block content
+  h2 List of users
+
+  each user in users
+    a.ui.card.fluid.link(href="/users/#{user._id}")
+      .content
+        h3.header user: #{user._id}
+        pre #{user}

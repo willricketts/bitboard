@@ -1,0 +1,9 @@
+extends layouts/default
+
+block content
+  h2 Single user
+
+  .ui.card.fluid
+    .content
+      h3.header user: #{user._id}
+      pre #{user}
