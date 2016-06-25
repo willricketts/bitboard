@@ -3,26 +3,18 @@
    This is done using the module.exports function,
    which sets them when require('./thisfile') is run. */
    
-var NAMESPACE = process.env.MAKI_SERVICE_NAMESPACE || 'maki';
+var NAMESPACE = process.env.MAKI_SERVICE_NAMESPACE || 'bitboard';
 var DATABASE  = process.env.MAKI_DATABASE_NAME || NAMESPACE;
 
 module.exports = {
   service: {
-    name: process.env.MAKI_SERVICE_NAME || 'Maki' ,
+    name: process.env.MAKI_SERVICE_NAME || 'Bitboard' ,
     authority: process.env.MAKI_SERVICE_AUTHORITY || 'localhost:9200' ,
     namespace: NAMESPACE ,
-    mission: process.env.MAKI_SERVICE_MISSION || 'A simple framework for hand-rolling your web application.',
-    description: process.env.MAKI_SERVICE_DESCRIPTION || 'Maki is an "architecture as a library" project, allowing you to focus on building your project rather than laboring over architecture decisions.',
-    source: 'https://github.com/martindale/maki',
+    mission: process.env.MAKI_SERVICE_MISSION || 'To provide a unified resource for blockchain-industry-oriented job postings.',
+    description: process.env.MAKI_SERVICE_DESCRIPTION || 'The best place to find and list jobs in the space of blockchain, decentralized, and cryptocurrency technology.',
+    source: 'https://github.com/willricketts/bitboard',
     points: [
-      {
-        header: 'Hand-rolled.',
-        description: 'No black boxes or arcane scribbling here.  Pure Javascript, and direct access to everything.'
-      },
-      {
-        header: 'Get Making.',
-        description: 'No black boxes or arcane scribbling here.  Pure Javascript, and direct access to everything.'
-      },
       {
         header: 'Already registered?',
         description: 'Go on then.  Get logged in.  You\'re _groovy_.',
