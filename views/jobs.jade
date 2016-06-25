@@ -6,5 +6,6 @@ block content
   each job in jobs
     a.ui.card.fluid.link(href="/jobs/#{job._id}")
       .content
-        h3.header job: #{job._id}
-        pre #{job}
+        h3.header #{job.title}
+        h5.header Posted on #{job.created}
+        p.description #{job.content}

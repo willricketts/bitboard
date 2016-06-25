@@ -11,7 +11,7 @@ module.exports = {
     name: process.env.MAKI_SERVICE_NAME || 'Bitboard' ,
     authority: process.env.MAKI_SERVICE_AUTHORITY || 'localhost:9200' ,
     namespace: NAMESPACE ,
-    mission: process.env.MAKI_SERVICE_MISSION || 'To provide a unified resource for blockchain-industry-oriented job postings.',
+    mission: process.env.MAKI_SERVICE_MISSION || 'a public service that provides a unified resource for blockchain-industry-oriented job postings.',
     description: process.env.MAKI_SERVICE_DESCRIPTION || 'The best place to find and list jobs in the space of blockchain, decentralized, and cryptocurrency technology.',
     source: 'https://github.com/willricketts/bitboard',
     points: [
